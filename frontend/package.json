@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "homepage": "https://shirajkadival.github.io/unity-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
