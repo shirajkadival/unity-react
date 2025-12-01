@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+    :root {
+        /* Unity Auto Parts Brand Colors */
+        --background: 0 0% 100%;
+        --foreground: 220 30% 15%;
+        
+        /* Primary: Navy Blue from Unity branding */
+        --primary: 220 45% 25%;
+        --primary-foreground: 0 0% 98%;
+        --primary-light: 220 40% 35%;
+        --primary-dark: 220 50% 18%;
+        
+        /* Accent: Vibrant Orange from Unity branding */
+        --accent: 16 100% 60%;
+        --accent-foreground: 0 0% 100%;
+        --accent-light: 16 100% 70%;
+        --accent-dark: 16 100% 50%;
+        
+        /* Secondary colors */
+        --secondary: 220 25% 92%;
+        --secondary-foreground: 220 30% 15%;
+        
+        --card: 0 0% 100%;
+        --card-foreground: 220 30% 15%;
+        
+        --popover: 0 0% 100%;
+        --popover-foreground: 220 30% 15%;
+        
+        --muted: 220 20% 96%;
+        --muted-foreground: 220 15% 45%;
+        
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        
+        --border: 220 20% 88%;
+        --input: 220 20% 88%;
+        --ring: 16 100% 60%;
+        
+        /* Custom Design Tokens */
+        --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+        --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 100%);
+        --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)) 0%, hsl(var(--primary)) 50%, hsl(var(--primary-light)) 100%);
+        
+        --shadow-sm: 0 2px 4px hsl(var(--primary) / 0.05);
+        --shadow-md: 0 4px 12px hsl(var(--primary) / 0.08);
+        --shadow-lg: 0 10px 30px hsl(var(--primary) / 0.12);
+        --shadow-accent: 0 8px 24px hsl(var(--accent) / 0.25);
+        
+        --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+        --radius: 0.75rem;
+    }
+    
+    .dark {
+        --background: 220 30% 8%;
+        --foreground: 0 0% 98%;
+        
+        --primary: 220 40% 35%;
+        --primary-foreground: 0 0% 98%;
+        
+        --accent: 16 100% 60%;
+        --accent-foreground: 0 0% 100%;
+        
+        --secondary: 220 30% 15%;
+        --secondary-foreground: 0 0% 98%;
+        
+        --card: 220 25% 12%;
+        --card-foreground: 0 0% 98%;
+        
+        --popover: 220 25% 12%;
+        --popover-foreground: 0 0% 98%;
+        
+        --muted: 220 25% 18%;
+        --muted-foreground: 220 15% 65%;
+        
+        --border: 220 25% 20%;
+        --input: 220 25% 20%;
+        --ring: 16 100% 60%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+    }
+}
+
+@layer components {
+    .section-container {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+    
+    .gradient-text {
+        background: var(--gradient-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .glass-effect {
+        background: hsla(var(--background), 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    
+    .card-hover {
+        transition: var(--transition-smooth);
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--accent));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent-dark));
+}
+
+/* Selection color */
+::selection {
+    background-color: hsl(var(--accent) / 0.3);
+    color: hsl(var(--foreground));
+}
+
+#emergent-badge {
+  display: none !important;
+}
