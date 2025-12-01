@@ -52,10 +52,34 @@ const HomePage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section ref={heroRef} className="relative min-h-[40vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-24 sm:pt-10 md:pt-12 lg:pt-20">
         {/* Animated Background */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary opacity-95" />
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-orange-500 via-pink-400 to-purple-500 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-700 via-blue-400 to-teal-500 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-500 to-green-300 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-pink-100 to-yellow-200 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-purple-800 via-indigo-600 to-pink-500 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-purple-800 via-indigo-600 to-pink-500 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-teal-300 via-cyan-400 to-blue-600 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-yellow-400 to-yellow-600 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-pink-200 via-teal-200 to-blue-200 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-800 via-indigo-600 to-indigo-500 opacity-95" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 opacity-95" /> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-r from-[#1F2C47] via-[#142238] to-[#FF7A00] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-r from-[#FF7A00] via-[#FF5C00] to-[#1F2C47] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-b from-[#1F2C47] via-[#0E1624] to-[#FF7A00] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#1F2C47] via-[#142238] to-[#FF5C00] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-b from-[#FFAA00] via-[#FF7A00] to-[#FF3E00] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#0E1624] via-[#1F2C47] to-[#FF7A00] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#142238] to-[#FF3E00] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#0F1A2E] via-[#1C2E4A] to-[#DA7A32] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#112036] via-[#1A2F45] to-[#C25A24] opacity-95"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#1A273A] via-[#23384F] to-[#E86A2A] opacity-90"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#0E1729] via-[#1C2B43] to-[#F09832] opacity-95"></div> */}
+          <div class="absolute inset-0 bg-gradient-to-br from-[#1B2A41] via-[#263A55] to-[#E27B43] opacity-90"></div>
+
           <motion.div
             animate={{
               scale: [1, 1.2, 1],
@@ -75,7 +99,7 @@ const HomePage = () => {
         </div>
 
         <div className="section-container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid sm:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={heroInView ? { opacity: 1, x: 0 } : {}}
@@ -135,7 +159,7 @@ const HomePage = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={heroInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative hidden lg:block"
+              className="relative hidden sm:block"
             >
               <motion.div
                 animate={{ y: [0, -20, 0] }}

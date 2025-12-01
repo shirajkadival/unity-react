@@ -28,9 +28,10 @@ export const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-effect shadow-md' : 'bg-transparent'
-      }`}
+      // className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      //   isScrolled ? 'glass-effect shadow-md' : 'bg-transparent'
+      // }`}
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/10 border-b border-white/10 shadow-lg"
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-20">
@@ -50,9 +51,16 @@ export const Navbar = () => {
               />
             </motion.div>
             <div>
-              <h1 className="text-xl font-bold text-primary">Unity Auto Parts</h1>
-              <p className="text-xs text-muted-foreground">Quality You Trust</p>
+              <h1 className="text-xl font-bold">
+                <span className="text-accent">Unity</span>{' '}
+                <span className="text-white">Auto Parts</span>
+              </h1>
+              
+              <p className="text-xs text-white/80 drop-shadow-sm">
+                Quality You Trust
+              </p>
             </div>
+
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,7 +72,7 @@ export const Navbar = () => {
                   className={`relative px-4 py-2 text-sm font-medium transition-colors ${
                     location.pathname === link.path
                       ? 'text-accent'
-                      : 'text-foreground hover:text-accent'
+                      : 'text-primary hover:text-accent'
                   }`}
                 >
                   {link.name}
