@@ -3,29 +3,29 @@ export const teamMembers = [
     id: 1,
     name: 'Bhuro Arodiya',
     role: 'Founder & CEO',
-    image: 'https://i.pravatar.cc/300?img=12',
+    image: '/images/teams/unitymember.png',
     bio: 'With over 15 years of experience in the automotive industry, Bhuro founded Unity Auto Parts with a vision to provide quality parts at affordable prices.'
   },
   {
     id: 2,
-    name: 'Ramesh Patel',
+    name: 'Farman Athaniya',
     role: 'Operations Manager',
-    image: 'https://i.pravatar.cc/300?img=33',
-    bio: 'Ramesh ensures smooth operations and maintains our high standards of quality control across all product lines.'
+    image: '/images/unitymember.png',
+    bio: 'Farman ensures smooth operations and maintains our high standards of quality control across all product lines.'
   },
   {
     id: 3,
-    name: 'Priya Mehta',
+    name: 'Afjal Arodiya',
     role: 'Sales Head',
-    image: 'https://i.pravatar.cc/300?img=47',
-    bio: 'Priya leads our sales team with dedication, ensuring every customer gets the best service and the right products for their needs.'
+    image: '/images/teams/Afjal2.png',
+    bio: 'Afjal leads our sales team with dedication, ensuring every customer gets the best service and the right products for their needs.'
   },
   {
     id: 4,
-    name: 'Kiran Shah',
+    name: 'Shanwaj Arodiya',
     role: 'Technical Expert',
-    image: 'https://i.pravatar.cc/300?img=51',
-    bio: 'With deep technical knowledge, Kiran helps customers choose the perfect parts and provides expert guidance on installations.'
+    image: '/images/teams/unitymember.png',
+    bio: 'With deep technical knowledge, Shanwaj helps customers choose the perfect parts and provides expert guidance on installations.'
   }
 ];
 
