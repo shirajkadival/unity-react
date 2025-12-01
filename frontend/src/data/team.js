@@ -3,28 +3,28 @@ export const teamMembers = [
     id: 1,
     name: 'Bhuro Arodiya',
     role: 'Founder & CEO',
-    image: '/images/teams/unitymember.png',
+    image: '/images/teams/farman.webp',
     bio: 'With over 15 years of experience in the automotive industry, Bhuro founded Unity Auto Parts with a vision to provide quality parts at affordable prices.'
   },
   {
     id: 2,
     name: 'Farman Athaniya',
     role: 'Operations Manager',
-    image: '/images/unitymember.png',
+    image: '/images/farman.webp',
     bio: 'Farman ensures smooth operations and maintains our high standards of quality control across all product lines.'
   },
   {
     id: 3,
     name: 'Afjal Arodiya',
     role: 'Sales Head',
-    image: '/images/teams/Afjal2.png',
+    image: '/images/teams/Afjal2.webp',
     bio: 'Afjal leads our sales team with dedication, ensuring every customer gets the best service and the right products for their needs.'
   },
   {
     id: 4,
     name: 'Shanwaj Arodiya',
     role: 'Technical Expert',
-    image: '/images/teams/unitymember.png',
+    image: '/images/teams/farman.webp',
     bio: 'With deep technical knowledge, Shanwaj helps customers choose the perfect parts and provides expert guidance on installations.'
   }
 ];
