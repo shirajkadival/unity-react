@@ -53,14 +53,17 @@ export const Navbar = () => {
             <div>
               <h1 className="text-xl font-bold">
                 <span className="text-accent">Unity</span>{' '}
-                <span className="text-white">Auto Parts</span>
+                <span className={isScrolled ? "text-primary" : "text-white"}>Auto Parts</span>
               </h1>
               
-              <p className="text-xs text-white/80 drop-shadow-sm">
+              <p className={isScrolled ? "text-xs text-muted-foreground":"text-xs text-white/80 drop-shadow-sm"}>
                 Quality You Trust
               </p>
             </div>
-
+            {/* <div>
+              <h1 className="text-xl font-bold text-primary">Unity Auto Parts</h1>
+              <p className="text-xs text-muted-foreground">Quality You Trust</p>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -72,7 +75,7 @@ export const Navbar = () => {
                   className={`relative px-4 py-2 text-sm font-medium transition-colors ${
                     location.pathname === link.path
                       ? 'text-accent'
-                      : 'text-primary hover:text-accent'
+                      : isScrolled ? 'text-foreground' : 'text-white'
                   }`}
                 >
                   {link.name}

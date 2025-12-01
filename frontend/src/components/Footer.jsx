@@ -37,7 +37,10 @@ export const Footer = () => {
                 <span className="text-2xl font-bold text-white">U</span>
               </div>
               <div>
-                <h3 className="text-lg font-bold">Unity Auto Parts</h3>
+                <h3 className="text-lg font-bold">
+                  <span className="text-accent">Unity</span>
+                  <span className="text-white"> Auto Parts</span>
+                  </h3>
                 <p className="text-xs text-primary-foreground/80">Quality You Trust</p>
               </div>
             </div>

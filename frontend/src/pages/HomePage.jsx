@@ -55,7 +55,7 @@ const HomePage = () => {
       <section ref={heroRef} className="relative min-h-[40vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-24 sm:pt-10 md:pt-12 lg:pt-20">
         {/* Animated Background */}
         <div className="absolute inset-0 z-0">
-          {/* <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary opacity-95" /> */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary opacity-95" />
           {/* <div className="absolute inset-0 bg-gradient-to-br from-orange-500 via-pink-400 to-purple-500 opacity-95" /> */}
           {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-700 via-blue-400 to-teal-500 opacity-95" /> */}
           {/* <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-500 to-green-300 opacity-95" /> */}
@@ -78,7 +78,8 @@ const HomePage = () => {
           {/* <div class="absolute inset-0 bg-gradient-to-br from-[#112036] via-[#1A2F45] to-[#C25A24] opacity-95"></div> */}
           {/* <div class="absolute inset-0 bg-gradient-to-br from-[#1A273A] via-[#23384F] to-[#E86A2A] opacity-90"></div> */}
           {/* <div class="absolute inset-0 bg-gradient-to-br from-[#0E1729] via-[#1C2B43] to-[#F09832] opacity-95"></div> */}
-          <div class="absolute inset-0 bg-gradient-to-br from-[#1B2A41] via-[#263A55] to-[#E27B43] opacity-90"></div>
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#1B2A41] via-[#263A55] to-[#E27B43] opacity-90"></div> */}
+          {/* <div class="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#1B2A41] to-[#E27B43] opacity-95"></div> */}
 
           <motion.div
             animate={{
