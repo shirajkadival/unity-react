@@ -143,7 +143,7 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-2 border-t border-border">
-                <a href="tel:+919537187262" className="flex items-center space-x-2 text-sm text-muted-foreground p-2">
+                <a href="tel:+919537187262" className="flex items-center space-x-2 text-sm text-white-foreground p-2">
                   <Phone className="w-4 h-4" />
                   <span>+91 9537187262</span>
                 </a>

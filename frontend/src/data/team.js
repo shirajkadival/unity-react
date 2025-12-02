@@ -10,14 +10,14 @@ export const teamMembers = [
     id: 2,
     name: 'Farman Athaniya',
     role: 'Operations Manager',
-    image: '/images/farman.webp',
+    image: '/images/teams/farman.webp',
     bio: 'Farman ensures smooth operations and maintains our high standards of quality control across all product lines.'
   },
   {
     id: 3,
     name: 'Afjal Arodiya',
     role: 'Sales Head',
-    image: '/images/teams/Afjal2.webp',
+    image: '/images/teams/AfjalArodiya.webp',
     bio: 'Afjal leads our sales team with dedication, ensuring every customer gets the best service and the right products for their needs.'
   },
   {
