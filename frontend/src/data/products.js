@@ -8,7 +8,7 @@ export const products = [
     discount: 18,
     category: 'Lighting',
     isNew: true,
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1549207107-2704df6b92ab?q=80&w=400&h=400&fit=crop',
     specifications: {
       material: 'High-grade Polycarbonate',
       warranty: '2 Years',
@@ -30,7 +30,7 @@ export const products = [
     originalPrice: 4000,
     discount: 20,
     category: 'Mirrors',
-    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1599476140806-f98d94d78c52?q=80&w=400&h=400&fit=crop',
     specifications: {
       material: 'ABS Plastic',
       warranty: '1 Year',
@@ -51,7 +51,7 @@ export const products = [
     price: 6800,
     category: 'Body Parts',
     isNew: true,
-    image: 'https://images.unsplash.com/photo-1449130015084-2dc954a6d995?w=400&h=400&fit=crop',
+    image: '/images/products/pvc-bumper.webp',
     specifications: {
       material: 'High-Impact PVC',
       warranty: '3 Years',
@@ -73,7 +73,7 @@ export const products = [
     originalPrice: 2800,
     discount: 25,
     category: 'Lighting',
-    image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1614032431701-5c4b3993641e?q=80&w=1025&auto=format&fit=crop',
     specifications: {
       material: 'Polycarbonate Lens',
       warranty: '1 Year',
@@ -93,7 +93,7 @@ export const products = [
     description: 'Complete rubber seal kit for all doors, ensuring noise and water protection',
     price: 1500,
     category: 'Rubber Parts',
-    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?w=400&h=400&fit=crop',
+    image: '/images/products/rubber-door-seal.webp',
     specifications: {
       material: 'EPDM Rubber',
       warranty: '2 Years',
@@ -115,7 +115,7 @@ export const products = [
     originalPrice: 1000,
     discount: 20,
     category: 'Mechanical',
-    image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&h=400&fit=crop',
+    image: '/images/products/car-air-filter.webp',
     specifications: {
       material: 'Multi-layer Filter Media',
       warranty: '6 Months',
@@ -135,7 +135,7 @@ export const products = [
     description: 'Premium chrome-finished door handles with smooth operation',
     price: 2500,
     category: 'Body Parts',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=400&h=400&fit=crop',
+    image: '/images/products/door-handle-set.webp',
     specifications: {
       material: 'Chrome-plated ABS',
       warranty: '1 Year',
@@ -158,7 +158,7 @@ export const products = [
     discount: 15,
     category: 'Lighting',
     isNew: true,
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=400&fit=crop',
+    image: '/images/products/tail-light-assembly.webp',
     specifications: {
       material: 'Polycarbonate',
       warranty: '2 Years',
@@ -178,7 +178,7 @@ export const products = [
     description: 'Premium oil filter for optimal engine protection and performance',
     price: 600,
     category: 'Mechanical',
-    image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=400&fit=crop',
+    image: '/images/products/engine-oil-filter.webp',
     specifications: {
       material: 'Synthetic Filter Media',
       warranty: '1 Year',

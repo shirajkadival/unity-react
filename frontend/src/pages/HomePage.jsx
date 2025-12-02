@@ -168,7 +168,7 @@ const HomePage = () => {
                 className="relative z-10"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=600&fit=crop"
+                  src='images/hero/hero1.webp'
                   alt="Premium Auto Parts"
                   className="rounded-3xl shadow-2xl"
                 />
