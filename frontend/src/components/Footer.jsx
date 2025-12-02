@@ -152,6 +152,9 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
+          <div className="mt-4 flex items-center justify-center space-x-2 text-sm text-primary-foreground/60">
+            <span>Developed by <a href="https://wa.me/7801935199" className="text-orange-500 hover:text-orange-600 transition-colors">Shiraj Kadival</a></span>
+          </div>
         </div>
       </div>
     </footer>
